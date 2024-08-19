@@ -3,14 +3,16 @@ import "./css/EightBall";
 import { choice } from "./random";
 import defaultAnswers from "./answers.json";
 
-function EightBall({}) {
+function EightBall({ answers = defaultAnswers }) {
   const [answer, setAnswer] = useState({
     msg: "Think of a question",
     color: black,
   });
+
   function handleClick(evt) {
     setAnswer(choice(answers));
   }
+
   return (
     <div
       className="EightBall"
