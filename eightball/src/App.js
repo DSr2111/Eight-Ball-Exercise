@@ -1,5 +1,6 @@
 import React from "react";
 import EightBall from "./EightBall";
+import "./css/App";
 
 function App() {
   return (
@@ -8,3 +9,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
